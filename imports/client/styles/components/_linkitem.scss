@@ -1,0 +1,14 @@
+.linkitem {
+    background: $linkitem-bg;
+    border: 1px solid $linkitem-border;
+    margin-bottom: $space;
+    padding: $space;
+}
+.linkitem__message, .linkitem__status-message {
+    color: $linkitem-text-color;
+}
+.linkitem__status-message {
+    font-style: italic;
+    text-align: center;
+    margin: 0;
+}

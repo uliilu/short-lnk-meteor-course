@@ -1,0 +1,19 @@
+.header {
+    position: fixed;
+    background: $header-bg;
+    color: $header-color;
+    top: 0;
+    right: 0;
+    left: 0;
+    z-index: 9;
+}
+.header__content {
+    display: flex;
+    justify-content: space-between;
+    margin: 0 auto;
+    max-width: $site-max-width;
+    padding: $space;
+}
+.header__titel {
+    margin: 0;
+}
