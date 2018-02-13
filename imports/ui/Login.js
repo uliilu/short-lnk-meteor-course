@@ -32,11 +32,11 @@ export default class Login extends React.Component {
                     {this.state.error ? <p>{this.state.error}</p> : undefined}
                     <form onSubmit={this.onSubmit.bind(this)} noValidate className="boxed-view__form">
                         <div className="input-field col s12">
-                            <input id="email" name="email" ref="email" type="email" className="validate purple lighten-5"/>
+                            <input id="email" name="email" ref="email" type="email" className="validate blue lighten-3"/>
                             <label htmlFor="email">eMail</label>
                         </div>
                         <div className="input-field col s12">
-                            <input id="password" ref="password" name="password" type="password" className="validate"/>
+                            <input id="password" ref="password" name="password" type="password" className="validate blue lighten-3"/>
                             <label htmlFor="password">Password</label>
                         </div>
                         <button className="btn waves-effect waves-light">Einloggen</button>
