@@ -1,8 +1,8 @@
 # Short-Lnk
 
-This project is a link shortener. A result of a video tutorial from Andrew Mead on Udemy. It's meant to learn Meteor and right at this moment GIT'ing
+This project is a link shortener. A result of a video tutorial from Andrew Mead on Udemy cause I'm a newbie to this. It's primarily meant for me to learn Meteor with React and right at this moment, GIT'ing!
 
-I guess this is probably nothing special...
+So nothing special and certainly nothing high end.
 
 # Author
 Uli von Homeyer
