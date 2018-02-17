@@ -1,31 +1,55 @@
-* {
-    margin: 0;
-    padding: 0;
-}
-html {
-    font-size: 62.5%;
-}
-body {
-    font-family: Helvetica, Arial, sans-serif;
-    font-size: $base-font-size;
-}
-h1 {
-    font-weight: 300;
-    margin-bottom: $space;
-}
-h2 {
-    font-size: $large-font-size;
-    margin-bottom: $space;
-}
-p {
-    margin-bottom: $space;
-}
+@import url('https://fonts.googleapis.com/icon?family=Material+Icons');
 a {
-    color: black;
+    color: $brand-primary;
 }
-input[type=text], input[type=email], input[type=password] {
-    border: 1px solid $input-border-color;
-    font-size: $base-font-size;
+a:hover {
+    color: darken($brand-primary, 5%);
+    text-decoration: overline;
+}
+.btn, .btn-large {
+    background-color: $brand-primary;
+}
+.btn:hover, .btn-large:hover {
+    color: $hell-blau;
+    background-color: darken($brand-primary, 10%);
+}
+button:focus, .btn:focus, .btn-large:focus {
+    background-color: lighten($brand-primary, 5%);
+}
+[type="checkbox"]:checked + label:before {
+    border-bottom: 2px solid $brand-primary;
+    border-right: 2px solid $brand-primary;
+}
+.filled-in[type="checkbox"] + label:before{
+    border: 2px solid $brand-primary;
+    background: transparent;
+}
+.filled-in[type="checkbox"]:checked + label:before {
+    border: 2px solid #296eaf;
+    border-bottom: 2px solid $brand-primary;
+    border-right: 2px solid $brand-primary;
+    background: transparent;
+}
+.filled-in[type="checkbox"] + label:after {
+    border: 2px solid $brand-primary;
+    background: transparent;
+}
+.filled-in[type="checkbox"]:checked + label:after {
+    background: $brand-primary;
+}
+.filled-in[type="checkbox"]:checked + label:before {
+    border-top: 2px solid transparent;
+    border-left: 2px solid transparent;
+    border-right: 2px solid #fff;
+    border-bottom: 2px solid #fff;
+}
+[type="checkbox"].filled-in:checked + label:after {
+    border: 2px solid $brand-primary;
+    background-color: $brand-primary;
+}
+.mb1rem {
     margin-bottom: $space;
-    padding: $input-spacing;
+}
+.linkitem .btn {
+    margin-left: $space;
 }

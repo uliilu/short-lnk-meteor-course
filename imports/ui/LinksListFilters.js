@@ -20,11 +20,11 @@ export default class LinksListFilters extends React.Component {
     render() {
         return (
             <div>
-                <label className="checkbox">
-                    <input className="checkbox__box" type="checkbox" checked={!this.state.showVisible} onChange={(e) => {
-                        // console.log('Checked?', e.target.checked);
-                        Session.set('showVisible', !e.target.checked);
-                    }}/>
+                <input className="filled-in" id="filled-in-box" type="checkbox" checked={!this.state.showVisible} onChange={(e) => {
+                    // console.log('Checked?', e.target.checked);
+                    Session.set('showVisible', !e.target.checked);
+                }}/>
+                <label className="checkbox" for="filled-in-box">
                     Show hidden links
                 </label>
             </div>

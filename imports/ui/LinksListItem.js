@@ -42,19 +42,23 @@ export default class LinksListItem extends React.Component {
     render() {
         return (
             <div className="linkitem">
-                <h2>{this.props.url}</h2>
-                <p className="linkitem__message">{this.props.shortUrl}</p>
-                {this.renderStats()}
-                <div>
-                    <a href={this.props.shortUrl} target="_blank" className="button button--pill button--link">Besuchen</a>
-                    <button ref="kopieren" data-clipboard-text={this.props.shortUrl} className="button button--pill">
-                        {this.state.justCopied ? 'Link kopiert!' : 'Kopieren'}
-                    </button>
-                    <button onClick={() => {
-                        Meteor.call('links.setVisibility', this.props._id, !this.props.visible);
-                    }} className="button button--pill">
-                        {this.props.visible ? 'Verstecken' : 'Zeigen'}
-                    </button>
+                <div className="row">
+                    <div className="col s12">
+                        <h5>{this.props.url}</h5>
+                        <p className="linkitem__message">{this.props.shortUrl}</p>
+                        {this.renderStats()}
+                        <div>
+                            <a href={this.props.shortUrl} target="_blank" className="btn waves-effect waves-light">Besuchen <i className="material-icons left">link</i></a>
+                            <a ref="kopieren" data-clipboard-text={this.props.shortUrl} className="btn waves-effect waves-light">
+                                {this.state.justCopied ? 'Link kopiert!' : 'Kopieren'} <i className="material-icons left">content_copy</i>
+                            </a>
+                            <a onClick={() => {
+                                Meteor.call('links.setVisibility', this.props._id, !this.props.visible);
+                            }} className="btn waves-effect waves-light">
+                                {this.props.visible ? 'Verstecken' : 'Zeigen'} <i className="material-icons left">{this.props.visible ? 'visibility_off' : 'visibility'}</i>
+                            </a>
+                        </div>
+                    </div>
                 </div>
             </div>
         );
