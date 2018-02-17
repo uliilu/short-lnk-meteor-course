@@ -51,5 +51,11 @@ button:focus, .btn:focus, .btn-large:focus {
     margin-bottom: $space;
 }
 .linkitem .btn {
-    margin-left: $space;
+    margin-right: $space;
+}
+@media (max-width:623px) {
+    .linkitem .btn {
+        margin-bottom: $space;
+        width: 100%;
+    }
 }

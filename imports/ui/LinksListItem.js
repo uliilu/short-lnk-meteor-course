@@ -44,7 +44,7 @@ export default class LinksListItem extends React.Component {
             <div className="linkitem">
                 <div className="row">
                     <div className="col s12">
-                        <h5>{this.props.url}</h5>
+                        <h6>{this.props.url}</h6>
                         <p className="linkitem__message">{this.props.shortUrl}</p>
                         {this.renderStats()}
                         <div>

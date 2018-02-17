@@ -5,6 +5,7 @@
     justify-content: center;
     height: 100vh; /* vh = viewport height */
     width: 100vw; /* vw = viewport width */
+    z-index: 100;
 }
 .boxed-view--modal {
     background: fade-out($boxed-view-overlag-bg, .3);
