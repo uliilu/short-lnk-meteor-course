@@ -26,8 +26,8 @@ export default class Login extends React.Component {
     }
     render() {
         return (
-            <div className="row">
-                <div className="col s4 offset-s4">
+            <div className="boxed-view">
+                <div className="boxed-view__box">
                     <h1>Short Lnk Login</h1>
                     {this.state.error ? <p>{this.state.error}</p> : undefined}
                     <form onSubmit={this.onSubmit.bind(this)} noValidate className="boxed-view__form">
@@ -37,12 +37,12 @@ export default class Login extends React.Component {
                         </div>
                         <div className="input-field col s12">
                             <input id="password" ref="password" name="password" type="password" className="validate"/>
-                            <label htmlFor="password">Password</label>
+                            <label htmlFor="password">Passwort</label>
                         </div>
                         <button className="btn waves-effect waves-light">Einloggen</button>
                     </form>
                     <p>
-                        <Link to="/signup">Hast Du kein Konto?</Link>
+                        <Link to="/signup">Benötigst Du ein Konto?</Link>
                     </p>
                 </div>
             </div>
