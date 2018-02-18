@@ -45,7 +45,7 @@ export default class AddLink extends React.Component {
     render() {
         return (
             <div>
-                <button className="btn waves-effect waves-light" onClick={() => this.setState({ isOpen: true })} className="button">+ Add link</button>
+                <button className="btn waves-effect waves-light" onClick={() => this.setState({ isOpen: true })} className="button">+ Link hinzufügen</button>
                 <Modal
                     isOpen={this.state.isOpen}
                     contentLabel="Add link"
@@ -55,7 +55,7 @@ export default class AddLink extends React.Component {
                     overlayClassName="boxed-view boxed-view--modal"
                     ariaHideApp={false}
                 >
-                    <p>Verknüpfung hinzufügen</p>
+                    <p>Link hinzufügen</p>
                     { this.state.error ? <p>{this.state.error}</p> : undefined }
                     <form onSubmit={this.onSubmit.bind(this)} className="boxed-view__form">
                         <input
@@ -66,7 +66,7 @@ export default class AddLink extends React.Component {
                             onChange={this.onChange.bind(this)}
                         />
                         <button className="btn waves-effect waves-light mb1rem">Hinzufügen</button>
-                        <button type="button" onClick={this.modalClose.bind(this)} className="btn waves-effect waves-light light-blue lighten-4">Cancel</button>
+                        <button type="button" onClick={this.modalClose.bind(this)} className="btn waves-effect waves-light light-blue lighten-4">Abbrechen</button>
                     </form>
                 </Modal>
             </div>

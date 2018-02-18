@@ -25,7 +25,7 @@ export default class LinksListFilters extends React.Component {
                     Session.set('showVisible', !e.target.checked);
                 }}/>
                 <label className="checkbox" for="filled-in-box">
-                    Show hidden links
+                    Zeig versteckte Links
                 </label>
             </div>
         );
